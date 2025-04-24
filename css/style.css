@@ -1,0 +1,31 @@
+@import url("./globals.css");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--fondo-color);
+  width: 100dvw;
+  height: 100dvh;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--superficie2-color);
+  width: 100dvw;
+  height: 75px;
+}
+header div {
+  width: 25px;
+  height: 25px;
+  background: var(--primary-color);
+  border-radius: 10%;
+  margin: 0 0 0 15px;
+}
+header img{
+  
+}

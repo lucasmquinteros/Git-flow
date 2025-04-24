@@ -1,0 +1,14 @@
+:root {
+  --primary-color: #6d28d9;
+  --claro-color: #8b5cf6;
+  --secundario-color: #10b981;
+  --acento-color: #f59e0b;
+  --fondo-color: #121212;
+  --superficie-color: #1e1e1e;
+  --superficie2-color: #2d2d2d;
+  --botton-color: linear-gradient(
+    to right,
+    var(--primary-color),
+    var(--claro-color)
+  );
+}
