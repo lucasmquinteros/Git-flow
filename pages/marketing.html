@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Marketing</title>
+    <link rel="stylesheet" href="../css/header.css" />
+    <link rel="stylesheet" href="../css/marketing.css" />
+  </head>
+  <body>
+    <div id="global-header"></div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        fetch("./header.html")
+          .then((response) => response.text())
+          .then((data) => {
+            document.getElementById("global-header").innerHTML = data;
+          })
+          .catch((error) => console.error("Error cargando el header:", error));
+      });
+    </script>
+    <main>
+      <section class="sec1">
+        <article class="transf">
+          <h3>Transformamos ideas en soluciones digitales</h3>
+          <button class="contac">Contactános</button>
+        </article>
+      </section>
+      <section class="benef">
+        <p>
+          Potenciamos tu presencia online con estrategias eficaces de marketing
+          digital que aumentan la visibilidad de tu marca y generan más
+          conversiones.
+        </p>
+        <h2>Beneficios</h2>
+        <article class="beneficios">Mayor visibilidad online</article>
+        <article class="beneficios">Aumento de conversiones</article>
+        <article class="beneficios">Engagement con tu audiencia</article>
+      </section>
+      <section class="equipo">
+        <h2>Nuestro Equipo</h2>
+        <div class="equipo">
+          <div class="personas">
+            <div class="imagen"></div>
+            <h3>Ana</h3>
+          </div>
+          <div class="personas">
+            <div class="imagen"></div>
+            <h3>Carlos</h3>
+          </div>
+          <div class="personas">
+            <div class="imagen"></div>
+            <h3>Maria</h3>
+          </div>
+        </div>
+      </section>
+      <section class="tecnologias">
+        <h2>Tecnologias</h2>
+        <div class="tecnologias">
+          <div class="img">Google Ads</div>
+          <div class="img">Meta Ads</div>
+          <div class="img">Analytics</div>
+          <div class="img">Hubspot</div>
+        </div>
+        <button class="solitud">solicitar servicio</button>
+      </section>
+    </main>
+  </body>
+</html>
