@@ -12,11 +12,33 @@
     var(--claro-color)
   );
 }
-button {
+.botonsec {
   background-color: #000000d3;
   border-radius: 6px;
   border: 1px solid var(--primary-color);
   color: var(--primary-color);
   padding: 10px 20px;
   cursor: pointer;
+}
+.botonprimario {
+  background: linear-gradient(
+    to right,
+    var(--primary-color),
+    var(--claro-color)
+  );
+  border-radius: 6px;
+  color: #fff;
+  padding: 10px 20px;
+  cursor: pointer;
+  border: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+.botonprimario:hover {
+  background: linear-gradient(
+    to right,
+    var(--claro-color),
+    var(--primary-color)
+  );
+  transform: translateY(-2px);
 }
