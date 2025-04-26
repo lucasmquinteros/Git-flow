@@ -1,0 +1,109 @@
+@import url("./globals.css");
+
+.sec1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100dvw;
+  height: auto;
+  margin: 0;
+}
+.transf {
+  width: 80%;
+  display: flex;
+  margin: 15px;
+  padding: 25px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: var(--primary-color);
+  border-radius: 6px;
+}
+.transf h3 {
+  text-align: center;
+  margin: 0 0 5px 0;
+  color: #fff;
+}
+.benef {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 5px 0 0 15px;
+}
+.benef p {
+  color: #8e8e8e;
+  margin: 0 0 10px 0;
+}
+.benef h3 {
+  margin: 10px 0 0 0;
+}
+.beneficios {
+  width: 80%;
+  background: var(--superficie2-color);
+  margin: 10px 0 0 0;
+  padding: 15px;
+  border-radius: 6px;
+}
+.equipo {
+  display: flex;
+  flex-direction: column;
+  margin: 5px 0 0 15px;
+  width: 100%;
+}
+.equipodiv {
+  display: flex;
+  gap: 50px;
+}
+.personas {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.imagen {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #5d5d5d;
+  border: 2px solid var(--primary-color);
+}
+.nombre {
+  margin: 2px 0 0 0;
+}
+.tecnologias {
+  display: flex;
+  flex-direction: column;
+  margin: 5px 0 0 15px;
+  gap: 10px;
+  width: 100%;
+}
+.tecnologias h3 {
+  margin: 10px 0 0 0;
+}
+.tecnologiasdiv {
+  display: flex;
+  gap: 10px;
+}
+.img {
+  width: 50px;
+  height: 50px;
+  border-radius: 8px;
+  background-color: var(--superficie2-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.text {
+  font-size: x-small;
+  margin: 0;
+  color: #c4c4c475;
+  text-align: center;
+}
+.botonprimario {
+  width: 150px;
+  margin-bottom: 10px;
+}
+.solicitud {
+  text-decoration: none;
+  color: #fff;
+}

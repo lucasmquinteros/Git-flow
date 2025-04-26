@@ -4,9 +4,60 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mi primer trabajo</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="./css/header.css" />
   </head>
   <body>
-    <h1>Hola Git!</h1>
+    <div id="global-header"></div>
+
+    <script>
+      // Cargar el header global
+      document.addEventListener("DOMContentLoaded", function () {
+        fetch("./pages/header.html")
+          .then((response) => response.text())
+          .then((data) => {
+            document.getElementById("global-header").innerHTML = data;
+          })
+          .catch((error) => console.error("Error cargando el header:", error));
+      });
+    </script>
+    <main>
+      <section class="sec1">
+        <article class="transf">
+          <h3>Transformamos ideas en soluciones digitales</h3>
+          <button class="contac">Contactános</button>
+        </article>
+      </section>
+      <section class="sec2">
+        <h3 class="sub">Nuestros Servicios</h3>
+        <article class="servicios">
+          <h4>Marketing Digital</h4>
+          <p>Estrategias efectivas para posicionar tu marca.</p>
+          <br />
+          <a href="./pages/marketing.html">Ver mas..</a>
+        </article>
+        <article class="servicios">
+          <h4>Diseño Gráfico</h4>
+          <p>Comunicación visual con impacto.</p>
+          <br />
+          <a href="#">Ver mas..</a>
+        </article>
+        <article class="servicios">
+          <h4>Desarrollo Web</h4>
+          <p>Sitios a medida optimizados para resultados.</p>
+          <br />
+          <a href="#">Ver mas..</a>
+        </article>
+      </section>
+      <section class="sec3">
+        <h3>Empresas que confían en nosotros</h3>
+        <div class="container_empresas">
+          <div class="empresas"></div>
+          <div class="empresas"></div>
+          <div class="empresas"></div>
+          <div class="empresas"></div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacto</title>
+    <link rel="stylesheet" href="../css/header.css" />
+    <link rel="stylesheet" href="../css/contacto.css" />
+  </head>
+  <body>
+    <div id="global-header"></div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        fetch("./header.html")
+          .then((response) => response.text())
+          .then((data) => {
+            document.getElementById("global-header").innerHTML = data;
+          })
+          .catch((error) => console.error("Error cargando el header:", error));
+      });
+    </script>
+    <main>
+      <section class="descr">
+        <h3 class="contac">Contacto</h3>
+        <p class="descripcion">
+          Estamos listos para ayudarte. Completa el formulario y nos pondremos
+          en contacto contigo lo antes posible.
+        </p>
+      </section>
+      <section>
+        <div class="container">
+          <form action="enviar" method="POST">
+            <div class="info">
+              <input type="text" placeholder="Nombre completo" required />
+            </div>
+            <div class="info">
+              <input type="email" placeholder="Correo electronico" />
+            </div>
+            <div class="info">
+              <select name="" id="">
+                <option value="">Selecciona un tema</option>
+                <option value="1">Marketing digital</option>
+                <option value="2">Diseño grafico</option>
+                <option value="3">Desarrollo web</option>
+              </select>
+            </div>
+            <div class="info">
+              <textarea placeholder="Tu mensaje"></textarea>
+            </div>
+            <button type="submit" class="botonprimario">Enviar</button>
+          </form>
+        </div>
+      </section>
+      <section class="redes">
+        <article class="info-ad">
+          <h3>Información adicional</h3>
+          <p>Teléfono: +34 123 456 789</p>
+          <p>Email: hola@gmail.com</p>
+          <p>Direccion: calle principal 123</p>
+        </article>
+        <article class="mapa">
+          <p>Mapa...</p>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>
