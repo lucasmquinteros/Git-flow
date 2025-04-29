@@ -42,3 +42,11 @@
   );
   transform: translateY(-2px);
 }
+
+.botonterciario {
+  background-color: var(--superficie2-color);
+  color: #ffffff;
+  cursor: pointer;
+  text-decoration: underline;
+  border: none;
+}
